@@ -1,0 +1,300 @@
+<html>
+<head>
+
+  <!--CDN's for the jquery and bootstrap links-->
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <div class="container" style= "margin-top: 35px;">
+    <h4>Select number of Rows</h4>
+      <div class="form-group">
+        <select name="state" id="maxRows" class="form-control" style="width:150px;">
+          <option value="50">Show All</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+        </select>
+      </div>
+      <input type="text" name="search" id="search" class="form-search" style="margin-left:85%;" placeholder="Search">
+
+      <div class="pagination">
+        <a href="#"> &laquo; </a>
+        <a href="#"> 1 </a>
+        <a href="#"> 2 </a>
+        <a href="#"> 3 </a>
+        <a href="#"> 4 </a>
+        <a href="#"> 5 </a>
+        <a href="#"> 6 </a>
+        <a href="#"> 7 </a>
+        <a href="#"> 8 </a>
+        <a href="#"> &raquo; </a>
+      </div>
+
+      <table id="example" class="table table-bordered table-striped">
+         <thead>
+           <tr>
+             <th>Subject</th>
+             <th>Teacher</th>
+             <th>Semester</th>
+             <th>Date</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+           <td>English</td><td>Junaid</td><td>3</td><td>2000/1/1</td>
+           </tr>
+           <tr>
+           <td>Urdu</td><td>Samina</td><td>2</td><td>2001/1/2</td>
+           </tr>
+           <tr>
+           <td>Computer</td><td>John</td><td>1</td><td>2002/2/3</td>
+           </tr>
+           <tr>
+           <td>Persian</td><td>Kashif</td><td>4</td><td>2003/3/1</td>
+           </tr>
+           <tr>
+           <td>Arts</td><td>Sassy</td><td>5</td><td>2004/2/3</td>
+           </tr>
+           <tr>
+           <td>Mathematics</td><td>Mike</td><td>8</td><td>2005/2/3</td>
+           </tr>
+           <tr>
+           <td>Health</td><td>Hello</td><td>6</td><td>2006/2/3</td>
+           </tr>
+           <tr>
+           <td>Handwriting</td><td>Dec</td><td>4</td><td>2007/3/7</td>
+           </tr>
+           <tr>
+           <td>Music</td><td>Nov</td><td>4</td><td>2009/7/8</td>
+           </tr>
+           <tr>
+           <td>Gardening</td><td>Oct</td><td>7</td><td>2010/4/3</td>
+           </tr>
+           <tr>
+           <td>Dramatics</td><td>Sep</td><td>6</td><td>2011/7/9</td>
+           </tr>
+           <tr>
+           <td>Dance</td><td>Aug</td><td>1</td><td>2012/2/8</td>
+           </tr>
+           <tr>
+           <td>Spanish </td><td>July</td><td>2</td><td>2013/3/3</td>
+           </tr>
+           <tr>
+           <td>Leadership</td><td>June</td><td>3</td><td>2014/7/3</td>
+           </tr>
+           <tr>
+           <td>Resource </td><td>May</td><td>7</td><td>2015/2/5</td>
+           </tr>
+           <tr>
+           <td>Reading</td><td>April</td><td>8</td><td>2016/2/8</td>
+           </tr>
+           <tr>
+           <td>Speech </td><td>March</td><td>4</td><td>2017/2/3</td>
+           </tr>
+           <tr>
+           <td>Speech </td><td>Feb</td><td>5</td><td>2018/27/4</td>
+           </tr>
+           <tr>
+           <td>Consumer </td><td>Jan</td><td>6</td><td>2019/2/11</td>
+           </tr>
+           <tr>
+           <td>Life Science</td><td>Ace</td><td>3</td><td>2020/8/8</td>
+           </tr>
+           <tr>
+           <td>Geography</td><td>Jane</td><td>2</td><td>2021/36/3</td>
+           </tr>
+           <tr>
+           <td>French </td><td>Abrams</td><td>2</td><td>2022/12/3</td>
+           </tr>
+           <tr>
+           <td>Woodshop</td><td>Creighton</td><td>1</td><td>2023/32/3</td>
+           </tr>
+           <tr>
+           <td>Metal </td><td>Abourezk</td><td>1</td><td>2024/2/9</td>
+           </tr>
+           <tr>
+           <td>Business </td><td>James</td><td>1</td><td>2025/3/3</td>
+           </tr>
+           <tr>
+           <td>Instrumental </td><td>Abelson</td><td>8</td><td>2026/6/1</td>
+           </tr>
+           <tr>
+           <td>Band</td><td>Hal</td><td>8</td><td>2027/5/30</td>
+           </tr>
+           <tr>
+           <td>Ancient </td><td>Abel</td><td>8</td><td>2028/5/3</td>
+           </tr>
+           <tr>
+           <td>Medieval </td><td>Reuben</td><td>2</td><td>2029/8/44</td>
+           </tr>
+           <tr>
+           <td>Renaissance </td><td>Abbey</td><td>3</td><td>2030/7/3</td>
+           </tr>
+           <tr>
+           <td>Modern </td><td>Edward</td><td>4</td><td>2030/6/2</td>
+           </tr>
+           <tr>
+           <td>Modern </td><td>Abagnale</td><td>5</td><td>2032/2/2</td>
+           </tr>
+           <tr>
+           <td>Creative </td><td>Frank</td><td>7</td><td>2089/4/1</td>
+           </tr>
+           <tr>   
+           <td>Poetry</td><td>Hank</td><td>3</td><td>2087/8/33</td>
+           </tr>
+           <tr>
+           <td>Vocabulary</td><td>Aaron</td><td>2</td><td>2055/5/36</td>
+           </tr>
+           <tr>
+           </tbody>
+      </table>
+  </div>
+
+  <script>  
+    //implementation of the search functionality
+      $(document).ready(function(){  
+           $('#search').keyup(function(){  //searching through search bar id
+                search_table($(this).val()); //calling the dearch table function 
+           });  
+
+           function search_table(value){   
+                $('#example tr').each(function(){  //grabing table rows one by one
+                     var found = 'false';  //setting initial found to zero for later checking
+                     $(this).each(function(){  
+                          //converting all the entered text to lowerase and checking
+                          if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0) 
+                          {  
+                               found = 'true';  
+                          }  
+                     });  
+
+                     //condition to verify the found words
+                     if(found == 'true')  
+                     {  
+                          $(this).show();  
+                     }  
+                     else  
+                     {  
+                          $(this).hide();  
+                     }  
+                });  
+           }  
+      }); 
+
+
+    //implementation of the sorting funtionaliy
+    th = document.getElementsByTagName('th'); //getting table headers in variable
+
+    for(let c=0; c < th.length; c++) //looping through headers*length times
+    {
+        th[c].addEventListener('click',item(c)) //adding event listener to the header onclick
+    }
+    function item(c)
+    {
+        return function()
+        {
+          console.log(c)
+          sortTable(c) //calling sort table function
+        }
+    }
+
+    function sortTable(c) {
+      var table, rows, switching, i, x, y, shouldSwitch;
+      table = document.getElementById("example"); //grabing table through table id
+      switching = true; //Making loop that will continue until no switching has been done:
+      
+      while (switching) //Loop through all table rows except header row
+      {
+        switching = false; //initially switching to false so the testing can be done
+        rows = table.rows;
+        
+        for (i = 1; i < (rows.length - 1); i++) 
+        { 
+          shouldSwitch = false;
+          //Getting two elements to be compared one from current row and one from the next
+          x = rows[i].getElementsByTagName("TD")[c];
+          y = rows[i + 1].getElementsByTagName("TD")[c];
+          //check if the two rows should switch place:
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+            //if so, mark as a switch and break the loop:
+            shouldSwitch = true;
+            break;
+          }
+        }
+        if (shouldSwitch) {
+          //If a switch has been marked, make the switc and mark that a switch has been done
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+        }
+      }
+    }
+
+
+   //implementation of pagination functionality
+   $(document).ready(function () {
+        $('#maxRows').on('change', function() {
+            getPagination('#example',$(this).val());
+        });
+    getPagination('#example',10); // default num of rows to be shown
+  });
+
+  function getPagination(table,noRows) { 
+   $('.pagination').html(''); // reset pagination to first page after data updated    
+      var trnum = 0;  
+      var maxRows = noRows; // getting Max Rows from select option
+      var totalRows = $(table + ' tbody tr').length; // numbers of rows 
+      $(table + ' tr:gt(0)').each(function() { // selecting index higher than 0
+        trnum++; // Start Counter 
+        if (trnum > maxRows) // if tr number gt maxRows
+        { 
+
+          $(this).hide(); // fade it out 
+        }
+        if (trnum <= maxRows) 
+        {
+          $(this).show();
+        } 
+      }); 
+
+      if (totalRows > maxRows) // if tr total rows gt max rows option
+      { 
+        var pagenum = Math.ceil(totalRows / maxRows); // ceil to get whole value   
+        for (var i = 1; i <= pagenum;) // for each page append pagination li 
+        { 
+          $('.pagination').append(
+            '<li class"wp" data-page="' + i + '">\  <span>' + i++ + '<span class="sr-only">(current)</span></span>\  </li>').show();
+        }
+      } // end if row count > max rows
+      
+      $('.pagination li:first-child').addClass('active'); // add active class to the first li 
+      $('.pagination li').on('click', function() { // on click each page
+        var pageNum = $(this).attr('data-page'); // get it's number
+        var trIndex = 0; // reset tr counter
+        $('.pagination li').removeClass('active'); // remove active class from all li 
+        $(this).addClass('active'); // add active class to the clicked 
+        $(table + ' tr:gt(0)').each(function() { // each tr in table not the header
+          trIndex++; // tr index counter 
+          // if tr index gt maxRows*pageNum or lt maxRows*pageNum-maxRows fade if out
+          if (trIndex > (maxRows * pageNum) || trIndex <= ((maxRows * pageNum) - maxRows)) {
+            $(this).hide();
+          } else {
+            $(this).show();
+          } //else fade in 
+        }); // end of for each tr in table
+      }); // end of on click pagination list
+  }
+
+ </script>
+
+
+  </table>
+</body>
+</html>
